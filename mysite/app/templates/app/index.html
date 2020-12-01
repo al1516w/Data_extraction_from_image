@@ -2,12 +2,6 @@
 <html>
 <head>
 	<title></title>
-    <style>
-        img{
-            height: 200px;
-            width: 200px;
-        }
-    </style>
 </head>
 <body>
 <form action="upload" method="post" enctype="multipart/form-data">
@@ -15,9 +9,5 @@
     <input type="file" name="image">
     <input type="submit" value="Upload file">
 </form>
-
-{% for k, obj in objects %}
-    <p><img src="{{ obj.pic.url }}"> <input type="text" value="{{ k }}" style="width:1000px"> </p>
-{% endfor %}
 </body>
 </html>
